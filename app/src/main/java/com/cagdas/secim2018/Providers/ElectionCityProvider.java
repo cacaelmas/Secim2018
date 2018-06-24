@@ -1,0 +1,92 @@
+package com.cagdas.secim2018.Providers;
+
+import com.cagdas.secim2018.Classes.ElectionCity;
+
+import java.util.List;
+
+public class ElectionCityProvider {
+    public static void getCities(List<ElectionCity> electionCityList){
+        electionCityList.add(new ElectionCity("1", "ADANA"));
+        electionCityList.add(new ElectionCity("2", "ADIYAMAN"));
+        electionCityList.add(new ElectionCity("3", "AFYONKARAHISAR"));
+        electionCityList.add(new ElectionCity("4", "AGRI"));
+        electionCityList.add(new ElectionCity("5", "AMASYA"));
+        electionCityList.add(new ElectionCity("6", "ANKARA"));
+        electionCityList.add(new ElectionCity("7", "ANTALYA"));
+        electionCityList.add(new ElectionCity("8", "ARTVIN"));
+        electionCityList.add(new ElectionCity("9", "AYDIN"));
+        electionCityList.add(new ElectionCity("10", "BALIKESIR"));
+        electionCityList.add(new ElectionCity("11", "BILECIK"));
+        electionCityList.add(new ElectionCity("12", "BINGOL"));
+        electionCityList.add(new ElectionCity("13", "BITLIS"));
+        electionCityList.add(new ElectionCity("14", "BOLU"));
+        electionCityList.add(new ElectionCity("15", "BURDUR"));
+        electionCityList.add(new ElectionCity("16", "BURSA"));
+        electionCityList.add(new ElectionCity("17", "CANAKKALE"));
+        electionCityList.add(new ElectionCity("18", "CANKIRI"));
+        electionCityList.add(new ElectionCity("19", "CORUM"));
+        electionCityList.add(new ElectionCity("20", "DENIZLI"));
+        electionCityList.add(new ElectionCity("21", "DIYARBAKIR"));
+        electionCityList.add(new ElectionCity("22", "EDIRNE"));
+        electionCityList.add(new ElectionCity("23", "ELAZIG"));
+        electionCityList.add(new ElectionCity("24", "ERZINCAN"));
+        electionCityList.add(new ElectionCity("25", "ERZURUM"));
+        electionCityList.add(new ElectionCity("26", "ESKISEHIR"));
+        electionCityList.add(new ElectionCity("27", "GAZIANTEP"));
+        electionCityList.add(new ElectionCity("28", "GIRESUN"));
+        electionCityList.add(new ElectionCity("29", "GUMUSHANE"));
+        electionCityList.add(new ElectionCity("30", "HAKKARI"));
+        electionCityList.add(new ElectionCity("31", "HATAY"));
+        electionCityList.add(new ElectionCity("32", "ISPARTA"));
+        electionCityList.add(new ElectionCity("33", "MERSIN"));
+        electionCityList.add(new ElectionCity("34", "ISTANBUL"));
+        electionCityList.add(new ElectionCity("35", "IZMIR"));
+        electionCityList.add(new ElectionCity("36", "KARS"));
+        electionCityList.add(new ElectionCity("37", "KASTAMONU"));
+        electionCityList.add(new ElectionCity("38", "KAYSERI"));
+        electionCityList.add(new ElectionCity("39", "KIRKLARELI"));
+        electionCityList.add(new ElectionCity("40", "KIRSEHIR"));
+        electionCityList.add(new ElectionCity("41", "KOCAELI"));
+        electionCityList.add(new ElectionCity("42", "KONYA"));
+        electionCityList.add(new ElectionCity("43", "KUTAHYA"));
+        electionCityList.add(new ElectionCity("44", "MALATYA"));
+        electionCityList.add(new ElectionCity("45", "MANISA"));
+        electionCityList.add(new ElectionCity("46", "KAHRAMANMARAS"));
+        electionCityList.add(new ElectionCity("47", "MARDIN"));
+        electionCityList.add(new ElectionCity("48", "MUGLA"));
+        electionCityList.add(new ElectionCity("49", "MUS"));
+        electionCityList.add(new ElectionCity("50", "NEVSEHIR"));
+        electionCityList.add(new ElectionCity("51", "NIGDE"));
+        electionCityList.add(new ElectionCity("52", "ORDU"));
+        electionCityList.add(new ElectionCity("53", "RIZE"));
+        electionCityList.add(new ElectionCity("54", "SAKARYA"));
+        electionCityList.add(new ElectionCity("55", "SAMSUN"));
+        electionCityList.add(new ElectionCity("56", "SIIRT"));
+        electionCityList.add(new ElectionCity("57", "SINOP"));
+        electionCityList.add(new ElectionCity("58", "SIVAS"));
+        electionCityList.add(new ElectionCity("59", "TEKIRDAG"));
+        electionCityList.add(new ElectionCity("60", "TOKAT"));
+        electionCityList.add(new ElectionCity("61", "TRABZON"));
+        electionCityList.add(new ElectionCity("62", "TUNCELI"));
+        electionCityList.add(new ElectionCity("63", "SANLIURFA"));
+        electionCityList.add(new ElectionCity("64", "USAK"));
+        electionCityList.add(new ElectionCity("65", "VAN"));
+        electionCityList.add(new ElectionCity("66", "YOZGAT"));
+        electionCityList.add(new ElectionCity("67", "ZONGULDAK"));
+        electionCityList.add(new ElectionCity("68", "AKSARAY"));
+        electionCityList.add(new ElectionCity("69", "BAYBURT"));
+        electionCityList.add(new ElectionCity("70", "KARAMAN"));
+        electionCityList.add(new ElectionCity("71", "KIRIKKALE"));
+        electionCityList.add(new ElectionCity("72", "BATMAN"));
+        electionCityList.add(new ElectionCity("73", "SIRNAK"));
+        electionCityList.add(new ElectionCity("74", "BARTIN"));
+        electionCityList.add(new ElectionCity("75", "ARDAHAN"));
+        electionCityList.add(new ElectionCity("76", "IGDIR"));
+        electionCityList.add(new ElectionCity("77", "YALOVA"));
+        electionCityList.add(new ElectionCity("78", "KARABUK"));
+        electionCityList.add(new ElectionCity("79", "KILIS"));
+        electionCityList.add(new ElectionCity("80", "OSMANIYE"));
+        electionCityList.add(new ElectionCity("81", "DUZCE"));
+
+    }
+}

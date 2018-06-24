@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CityResultActivity">
+
+    <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="top"
+    android:background="#5a89e6"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/selected_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="CANCEL" />
+
+
+    <TextView
+        android:id="@+id/open_box_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/divider"
+        android:textColor="#DB5A82" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/totalBoxCount"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/totalBoxCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/election_type_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="#c2d3f4"
+        android:gravity="center"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/open_districts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="#ed2147"
+            android:onClick="open_districts_click"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="DISTRICTS"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+        <Button
+            android:id="@+id/change_election_type_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/open_districts_button"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="#63638F"
+            android:onClick="change_election_type_click"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="GENEL SECIM SONUCLARI"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="11dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vote_results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/election_type_selection"
+        android:layout_marginTop="15dp"
+        android:padding="7dp">
+
+
+        <RelativeLayout
+            android:id="@+id/canvas_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vote / Total"/>
+
+            <TextView
+                android:id="@+id/valid_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toLeftOf="@id/divider2"
+                android:textColor="#DB5A82" />
+
+            <TextView
+                android:id="@+id/divider2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/voter_count"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/voter_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:text="SAVE"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/election_results_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/canvas_container">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/city_result_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/election_results_list"
+            android:layout_width="match_parent"
+            android:background="#bc8383"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/last_update_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
