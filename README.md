@@ -1,4 +1,11 @@
 # Secim2018
+
+# UPDATE AFTER ELECTIONS
+
+The app has proven to be working and communicating with the servers. However, the data that is provided from adilsecim is not consistent and false. Please do not use the results for any means of formal usage.
+
+# UPDATE AFTER ELECTIONS
+
 Secim2018Android developed by using adilsecim.net API
 
 To Install:
